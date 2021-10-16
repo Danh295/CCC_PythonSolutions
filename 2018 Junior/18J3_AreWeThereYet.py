@@ -17,5 +17,7 @@ for i in range(len(distances)+1):
         else:
             cities[city].append(dist)
 
+        print(i,j, ":", sum(distances[i:j])," OR ", sum(distances[j:i]))
+
 for value in cities.values():
     print(*value)
